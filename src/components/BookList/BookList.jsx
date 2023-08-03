@@ -13,7 +13,7 @@ const BookList = () => {
     return {
       ...singleBook,
       id: (singleBook.id).replace('/works/', ''),
-      coverImg: singleBook.cover_id ? `https://covers.openlibrary.org/b/id/${singleBook.cover_id}-L.jpg` : coverImg
+      cover_img: singleBook.cover_id ? `https://covers.openlibrary.org/b/id/${singleBook.cover_id}-L.jpg` : coverImg
     }
   });
 
